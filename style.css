@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#piano {
+    display: flex;
+    position: relative;
+    height: 200px;
+    user-select: none;
+}
+
+.key {
+    border: 1px solid #000;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.white {
+    width: 60px;
+    background: #fff;
+}
+
+.black {
+    width: 40px;
+    height: 120px;
+    background: #000;
+    color: #fff;
+    position: absolute;
+    margin-left: -20px;
+}
+
+.white:nth-of-type(7n+1) {
+    margin-left: 20px;
+}
+
+.active {
+    background-color: #f0f0f0;
+}
